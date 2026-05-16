@@ -13,11 +13,11 @@ export function Logo({ className }: { className?: string }) {
         width="20"
         height="20"
         rx="5"
-        className="fill-foreground"
+        className="fill-primary"
       />
       <path
         d="M8 7h5.2a3.8 3.8 0 0 1 0 7.6H10.4V17M10.4 11.2h2.6"
-        className="stroke-background"
+        stroke="#001b0e"
         strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"

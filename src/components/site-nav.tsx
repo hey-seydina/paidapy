@@ -3,15 +3,16 @@ import { Logo } from "@/components/logo";
 
 export function SiteNav() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <Logo className="h-6 w-6" />
-          <span className="text-base font-semibold tracking-tight">
-            paidapy
-          </span>
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur-xl">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+        <Link
+          href="/"
+          className="flex items-center gap-2 transition-opacity hover:opacity-80"
+        >
+          <Logo className="h-5 w-5" />
+          <span className="text-sm font-semibold tracking-tight">paidapy</span>
         </Link>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           <Link
             href="/docs"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -24,8 +25,14 @@ export function SiteNav() {
           >
             Pricing
           </Link>
+          <Link
+            href="/changelog"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Changelog
+          </Link>
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-5">
           <Link
             href="/signin"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -34,9 +41,9 @@ export function SiteNav() {
           </Link>
           <Link
             href="/signup"
-            className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex h-8 items-center rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-[0_0_24px_-4px_rgba(0,255,136,0.4)]"
           >
-            Get API key
+            Get key
           </Link>
         </div>
       </div>
